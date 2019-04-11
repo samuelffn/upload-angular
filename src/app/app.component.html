@@ -1,0 +1,9 @@
+<input type="file" #file (change)="onFileChanged($event)">
+<button (click)="file.click()">Selecionar arquivo</button>
+<button (click)="onUpload()">Enviar arquivo!</button>
+
+<br><br><br>
+
+<input type="file" #files (change)="onFilesChanged($event)" multiple />
+<button (click)="files.click()">Selecionar arquivos</button>
+<button (click)="onUploads()">Enviar arquivos!</button>
